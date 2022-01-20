@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nguyên vật liệu</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- MODAL LARGE-->
+    <div class="m-row">
+        <div id="" class="m-modal-medium">
+            <div class="m-dialog m-modal">
+                <div class="m-dialog-header">
+                    <div class="m-dialog-title m-modal-heading">
+                        Thêm nguyên vật liệu
+                    </div>
+                    <div class="m-dialog-close m-close-modal" id="btnCloseForm">
+                        <i class="mi-16 mi-close"></i>
+                    </div>
+                </div>
+                <!-- <form> -->
+                <div class="m-modal-content">
+                    <div class="m-modal-right">
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Mã nhân viên (<span>*</span>)</label>
+                                    <div class="m-input-error">
+                                        <input required type="text" class="m-input" id="txtEmployeeCode"
+                                            fieldName="EmployeeCode" tabindex="1">
+                                        <div class="m-error-info"> <span class="m-error-title"></span>
+                                            <div class="m-arrow-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Họ và tên (<span>*</span>)</label>
+                                    <div class="m-input-error">
+                                        <input required type="text" class="m-input" id="txtFullName"
+                                            fieldName="FullName" tabindex="2">
+                                        <div class="m-error-info"> <span class="m-error-title"></span>
+                                            <div class="m-arrow-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Ngày sinh</label>
+                                    <div class="m-calendar">
+                                        <div class="m-combobox">
+                                            <input type="date" name="dateOfBirth" class="m-input"
+                                                placeholder="_ _ / _ _ / _ _ _ _" id="dtDateOfBirth"
+                                                fieldName="DateOfBirth" tabindex="3">
+                                            <!-- <button class="m-combobox-btn">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                </button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Giới tính</label>
+                                    <div class="m-combobox" id="CbxGender" fieldName="Gender" combobox="GenderName">
+                                        <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin"
+                                            tabindex="4">
+                                        <button tabindex="-1" class="m-combobox-btn">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                        <div class="m-combobox-data">
+                                            <div class="m-combobox-item" value="1">Nam</div>
+                                            <div class="m-combobox-item" value="0">Nữ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-modal-row">
+
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Số CMTND/ Căn cước (<span>*</span>)</label>
+                                    <div class="m-input-error">
+                                        <input required type="text" class="m-input" id="txtIdentityNumber"
+                                            fieldName="IdentityNumber" tabindex="5">
+                                        <div class="m-error-info"> <span class="m-error-title"></span>
+                                            <div class="m-arrow-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Ngày cấp</label>
+                                    <div class="m-calendar">
+                                        <div class="m-combobox">
+                                            <input type="date" class="m-input" placeholder="_ _ / _ _ / _ _ _ _"
+                                                id="dtIdentityDate" fieldName="IdentityDate" tabindex="6">
+                                            <!-- <button class="m-combobox-btn">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                </button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Nơi cấp</label>
+                                    <div>
+                                        <input type="text" class="m-input" id="txtIdentityPlace"
+                                            fieldName="IdentityPlace" tabindex="7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-modal-row">
+
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Email (<span>*</span>)</label>
+                                    <div class="m-input-error">
+                                        <input required type="email" class="m-input" id="txtEmail" fieldName="Email"
+                                            tabindex="8">
+                                        <div class="m-error-info"> <span class="m-error-title"></span>
+                                            <div class="m-arrow-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Số điện thoại (<span>*</span>)</label>
+                                    <div class="m-input-error">
+                                        <input required type="text" class="m-input" id="txtPhoneNumber"
+                                            fieldName="PhoneNumber" tabindex="9">
+                                        <div class="m-error-info"> <span class="m-error-title"></span>
+                                            <div class="m-arrow-bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="m-modal-title">
+                            <p>B. Thông tin công việc</p>
+                        </div>
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Vị trí</label>
+                                    <div class="m-combobox" id="cbxPosition" combobox="PositionName"
+                                        fieldName="PositionId" api="/api/v1/Positions">
+                                        <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin"
+                                            tabindex="10">
+                                        <button tabindex="-1" class="m-combobox-btn">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                        <div class="m-combobox-data" id="cbxPositionId">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Phòng ban</label>
+                                    <div class="m-combobox" id="cbxDepartment" combobox="DepartmentName"
+                                        fieldName="DepartmentId" api="/api/v1/Departments">
+                                        <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin"
+                                            tabindex="11">
+                                        <button tabindex="-1" class="m-combobox-btn">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                        <div class="m-combobox-data" id="cbxDepartmentId">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Mã số thuế cá nhân</label>
+                                    <div>
+                                        <input type="text" class="m-input" id="txtPersonalTaxCode"
+                                            fieldName="PersonalTaxCode" tabindex="12">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Mức lương cơ bản</label>
+                                    <div>
+                                        <input type="text" class="m-input" id="txtSalary" fieldName="Salary"
+                                            tabindex="13">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="m-modal-row">
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Ngày gia nhập công ty</label>
+                                    <div class="m-calendar">
+                                        <div class="m-combobox">
+                                            <input type="date" name="JoinDate" class="m-input"
+                                                placeholder="_ _ / _ _ / _ _ _ _" fieldName="JoinDate" id="dtJoinDate"
+                                                tabindex="14">
+                                            <!-- <button class="m-combobox-btn">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                </button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-modal-col">
+                                <div class="m-modal-group">
+                                    <label for="">Tình trạng công việc</label>
+                                    <div class="m-combobox" id="cbxWorkStatus" fieldName="WorkStatus"
+                                        combobox="WorkStatus">
+                                        <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin"
+                                            tabindex="15">
+                                        <button tabindex="-1" class="m-combobox-btn">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </button>
+                                        <div class="m-combobox-data" id="cbxWorkStatusId">
+                                            <div class="m-combobox-item" value="0">Đã nghỉ việc</div>
+                                            <div class="m-combobox-item" value="1">Đang làm việc</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-dialog-footer">
+                    <button class="m-btn m-btn-cancel m-close-modal" id="btnCancel" tabindex="17">Hủy</button>
+
+                    <button class="m-btn m-btn-icon" id="btnSave" tabindex="16">
+                        <i class="fas fa-save"></i>Lưu
+                    </button>
+                </div>
+                <!-- </form> -->
+            </div>
+            <div class="dialog-background"></div>
+        </div>
+
+    </div>
+
+
+    <!-- loading icon -->
+    <div class="m-loading">
+        <div class="m-loading-icon"></div>
+    </div>
+
+    <!-- TOAST MESSAGE -->
+    <div class="m-toast-status">
+        <div class="m-toast m-toast-danger" id="toastDanger">
+            <div class="m-toast-icon">
+                <i class="fa fa-exclamation-triangle"></i>
+            </div>
+            <div class="m-toast-text">
+                Thao tác không thành công!
+            </div>
+            <div class="m-toast-close" onclick="hideToastMsg()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="m-toast m-toast-success" id="toastSuccess">
+            <div class="m-toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="m-toast-text">
+                Thêm mới bản ghi thành công!
+            </div>
+            <div class="m-toast-close" onclick="hideToastMsg()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="m-toast m-toast-primary" id="toastPrimary">
+            <div class="m-toast-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="m-toast-text">
+                Cập nhật bản ghi thành công!
+            </div>
+            <div class="m-toast-close" onclick="hideToastMsg()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="m-toast m-toast-success" id="toastDelete">
+            <div class="m-toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="m-toast-text">
+                Xóa thành công!
+            </div>
+            <div class="m-toast-close" onclick="hideToastMsg()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIALOG CONFIRM -->
+    <div id="dialogConfirm" style="display: none;">
+        <div class="m-dialog">
+            <div class="m-dialog-header">
+                <div class="m-dialog-title">
+                    Xóa nhân viên
+                </div>
+                <div class="m-dialog-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="m-dialog-content">
+                <div class="m-popup-icon">
+                    <i class="fa fa-exclamation-triangle"></i>
+                </div>
+                <div class="m-popup-text">
+                    <!-- binding -->
+                </div>
+            </div>
+            <div class="m-dialog-footer">
+                <button class="m-btn m-btn-cancel">Không</button>
+                <button class="m-btn m-btn-del" id="btnConfirmDelete">Có</button>
+            </div>
+        </div>
+        <div class="dialog-background"></div>
+    </div>
+</body>
+
+</html>

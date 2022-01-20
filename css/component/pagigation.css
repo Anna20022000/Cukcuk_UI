@@ -1,0 +1,64 @@
+.m-paginate{
+    height: 26px;
+    width: 100%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.m-paginate .m-paging-left{
+    /* width: 200px; */
+    line-height: 26px;
+}
+.m-paginate .m-paging-center{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.m-paginate .m-paging-first{
+    width: 26px;
+    height: 26px;
+    /* background-image: url('../../content/icon/btn-firstpage.svg'); */
+}
+.m-paginate .m-paging-prev{
+    width: 26px;
+    height: 26px;
+    /* background-image: url('../../content/icon/btn-prev-page.svg'); */
+
+}
+.m-paginate .m-paging-number{
+    line-height: 26px;
+    text-align: center;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+}
+.m-paginate .m-paging-next{
+    width: 26px;
+    height: 26px;
+    /* background-image: url('../../content/icon/btn-next-page.svg'); */
+
+}
+.m-paginate .m-paging-last{
+    width: 26px;
+    height: 26px;
+    /* background-image: url('../../content/icon/btn-lastpage.svg'); */
+
+}
+.m-paginate .m-paging-center .m-paging-number div.m-page{
+    min-width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.m-paginate .m-paging-center .m-paging-number div.m-page:hover{
+    background-color: #bbbbbb;
+}

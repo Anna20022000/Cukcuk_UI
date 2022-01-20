@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nguyên vật liệu</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <nav class="m-navbar">
+      <div class="m-nav-top">
+        <a href="#" class="m-toggle"></a>
+        <a href="#" class="m-logo"></a>
+      </div>
+      <div class="m-menu">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="mi mi-24 mi-sidebar-material"></div>
+              <div class="m-name-submenu">Nguyên vật liệu</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="m-main">
+      <!-- HEADER -->
+      <header class="m-header">
+        <div class="m-header-left">
+          <div class="m-header-branch">
+            <div class="m-combobox">
+              <input type="text" value="Ánh Dương Restaurant" />
+              <button class="m-combobox-btn mi-chevron-down"></button>
+            </div>
+          </div>
+        </div>
+        <div class="m-header-right">
+          <div class="m-version">R58.0</div>
+          <div class="m-language">
+            <div class="m-combobox">
+              <input type="text" value="Tiếng Việt (Tiếng Việt)" />
+              <button class="m-combobox-btn mi-chevron-down"></button>
+            </div>
+          </div>
+          <div class="m-notifi">
+            <div class="mi-notifi"></div>
+          </div>
+          <div class="m-account">
+            <div class="m-account-image"></div>
+            <div class="m-account-name">Chu Yến</div>
+            <div
+              class="mi-16 mi-chevron-down"
+              style="background-color: #0973b9"
+            ></div>
+          </div>
+        </div>
+      </header>
+      <!-- END HEADER -->
+
+      <!-- CONTENT -->
+      <section class="m-content">
+        <!-- title page -->
+        <div class="m-title">
+          <span>Nguyên vật liệu</span>
+          <div class="m-title-right">
+            <button class="m-btn m-btn-icon">
+              <i class="mi-14 mi-speaker m-mr-8"></i>
+              Phản hồi
+            </button>
+          </div>
+        </div>
+        <!-- end title page -->
+        <!-- Content main -->
+        <div class="m-content-main">
+          <div class="m-toolbar">
+            <button class="m-btn m-btn-icon">
+              <i class="mi mi-16 mi-new m-mr-5"></i>
+              Thêm
+            </button>
+            <button class="m-btn m-btn-icon">
+              <i class="mi mi-16 mi-duplicate m-mr-5"></i>
+              Nhân bản
+            </button>
+            <button class="m-btn m-btn-icon">
+              <i class="mi mi-16 mi-update m-mr-5"></i>
+              Sửa
+            </button>
+            <button class="m-btn m-btn-icon">
+              <i class="mi mi-16 mi-delete m-mr-5"></i>
+              Xóa
+            </button>
+            <button class="m-btn m-btn-icon">
+              <i class="mi mi-16 mi-refresh m-mr-5"></i>
+              Nạp
+            </button>
+          </div>
+          <div class="m-content-table">
+            <!-- table -->
+            <table class="m-table">
+              <thead class="m-text-left">
+                <tr>
+                  <th>
+                    <div class="m-th-name">Mã nguyên vật liệu</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">Tên nguyên vật liệu</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">Tính chất</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">ĐVT chính</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">Nhóm nguyên vật liệu</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">Ghi chú</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                  <th>
+                    <div class="m-th-name">Ngừng theo dõi</div>
+                    <div class="m-filter">
+                      <div class="m-cbb-filter"><span>*.</span></div>
+                      <input type="text" class="m-input" />
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>NVL001</td>
+                  <td>Sữa tươi vinamilk</td>
+                  <td>Đồ uống đóng chai</td>
+                  <td>Thùng</td>
+                  <td>Sữa</td>
+                  <td>Để ý hạn sử dụng</td>
+                  <td><input type="checkbox" class="m-checkbox" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- paginate -->
+        <div class="m-paginate">
+          <div class="m-paging-left">Tổng số: <b>1054</b> bản ghi</div>
+        </div>
+        <!-- end paginate -->
+        <!-- end content main -->
+      </section>
+      <!-- END CONTENT -->
+    </div>
+
+    <!-- =========================== -->
+    <div class="m-row">
+      <div id="" class="m-modal-medium">
+        <div class="m-modal">
+          <div class="m-modal-header">
+            <div class="m-modal-title">Thêm nguyên vật liệu</div>
+            <div class="m-close-modal mi-16 mi-close">
+            </div>
+          </div>
+          <!-- <form> -->
+          <div class="m-modal-content">
+            <!-- input nhập liệu NVL -->
+            <div class="m-modal-group">
+              <div class="m-modal-col-6 m-row m-pr-20">
+                <div class="m-modal-col-3">Tên <span>(*)</span></div>
+                <div class="m-modal-col-9">
+                  <input type="text" class="m-input" />
+                </div>
+              </div>
+              <div class="m-modal-col-6 m-row">
+                <div class="m-modal-col-3">Mã <span>(*)</span></div>
+                <div class="m-modal-col-9">
+                  <input type="text" class="m-input" />
+                </div>
+              </div>
+            </div>
+            <div class="m-modal-group">
+              <div class="m-modal-col-6 m-row">
+                <div class="m-modal-col-3">ĐVT <span>(*)</span></div>
+                <div class="m-modal-col-9">
+                  <input type="text" class="m-input" />
+                </div>
+              </div>
+              <div class="m-modal-col-6 m-row">
+                <div class="m-modal-col-3">Kho ngầm định</div>
+                <div class="m-modal-col-9">
+                  <input type="text" class="m-input" />
+                </div>
+              </div>
+            </div>
+            <div class="m-modal-group">
+              <div class="m-modal-col-6 m-row">
+                <div class="m-modal-col-3">Hạn sử dụng</div>
+                <div class="m-modal-col-9 m-row-inner">
+                  <input type="text" class="m-input m-modal-col-6 m-mr-8" />
+                  <input type="text" class="m-input m-modal-col-6" />
+                </div>
+              </div>
+              <div class="m-modal-col-6 m-row">
+                <div class="m-modal-col-3">SL tồn tối thiểu</div>
+                <div class="m-modal-col-3">
+                  <input type="text" value="0,00" style="text-align: right;" class="m-input" />
+                </div>
+              </div>
+            </div>
+            <div class="m-modal-group m-row m-textarea">
+                <div class="m-modal-col-2">Mô tả</div>
+                <div class="m-modal-col-10">
+                  <textarea rows="3"></textarea>
+                </div>
+            </div>
+            <!-- bảng Đơn vị chuyển đổi -->
+            <div class="m-tab-bar">
+              <div class="tab-conversions">
+                Đơn vị chuyển đổi
+              </div>
+              <div class="m-pl-8">
+                  Nhà cung cấp
+              </div>
+            </div>
+            <div class="m-modal-grid-view">
+              <table class="m-modal-table">
+                <tr>
+                  <th style="width: 5%;">STT</th>
+                  <th style="width: 25%;">Đơn vị chuyển đổi</th>
+                  <th style="width: 20%;">Tỷ lệ chuyển đổi</th>
+                  <th style="width: 20%;">Phép tính</th>
+                  <th>Mô tả</th>
+                </tr>
+              </table>
+            </div>
+            <div class="m-end-tab">
+              <button class="m-btn m-btn-icon m-mr-5">
+                <i class="mi mi-16 mi-new m-mr-8"></i>
+                Thêm dòng
+              </button>
+              <button class="m-btn m-btn-icon">
+                <i class="mi mi-16 mi-delete m-mr-8"></i>
+                Xóa dòng
+              </button>
+            </div>
+          </div>
+          <div class="m-modal-footer">
+            <div class="m-footer-left">
+              <button class="m-btn m-btn-icon">
+                <i class="mi mi-16 mi-help m-mr-8"></i>
+                Giúp
+              </button>
+            </div>
+            <div class="m-footer-right">
+              <button class="m-btn m-btn-icon m-mr-8">
+                <i class="mi-16 mi-save m-mr-8"></i>
+                Cất
+              </button>
+              <button class="m-btn m-btn-icon m-mr-8">
+                <i class="mi-16 mi-save-add m-mr-8"></i>
+                Cất và thêm
+              </button>
+              <button class="m-btn m-btn-icon">
+                <i class="mi-16 mi-cancel m-mr-8"></i>
+                Hủy bỏ
+              </button>
+            </div>
+          </div>
+          <!-- </form> -->
+        </div>
+        <div class="modal-background"></div>
+      </div>
+    </div>
+    <!-- loading icon -->
+    <div class="m-loading">
+      <div class="m-loading-icon"></div>
+    </div>
+
+    <!-- TOAST MESSAGE -->
+    <div class="m-toast-status">
+      <div class="m-toast m-toast-danger" id="toastDanger">
+        <div class="m-toast-icon">
+          <i class="fa fa-exclamation-triangle"></i>
+        </div>
+        <div class="m-toast-text">Thao tác không thành công!</div>
+        <div class="m-toast-close" onclick="hideToastMsg()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="m-toast m-toast-success" id="toastSuccess">
+        <div class="m-toast-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="m-toast-text">Thêm mới bản ghi thành công!</div>
+        <div class="m-toast-close" onclick="hideToastMsg()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="m-toast m-toast-primary" id="toastPrimary">
+        <div class="m-toast-icon">
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="m-toast-text">Cập nhật bản ghi thành công!</div>
+        <div class="m-toast-close" onclick="hideToastMsg()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="m-toast m-toast-success" id="toastDelete">
+        <div class="m-toast-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="m-toast-text">Xóa thành công!</div>
+        <div class="m-toast-close" onclick="hideToastMsg()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIALOG CONFIRM -->
+    <div id="dialogConfirm" style="display: none">
+      <div class="m-dialog">
+        <div class="m-dialog-header">
+          <div class="m-dialog-title">Xóa nhân viên</div>
+          <div class="m-dialog-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="m-dialog-content">
+          <div class="m-popup-icon">
+            <i class="fa fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-popup-text">
+            <!-- binding -->
+          </div>
+        </div>
+        <div class="m-dialog-footer">
+          <button class="m-btn m-btn-cancel">Không</button>
+          <button class="m-btn m-btn-del" id="btnConfirmDelete">Có</button>
+        </div>
+      </div>
+      <div class="dialog-background"></div>
+    </div>
+  </body>
+</html>

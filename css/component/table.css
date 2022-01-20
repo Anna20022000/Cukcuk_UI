@@ -1,0 +1,54 @@
+.m-table {
+  border-spacing: unset;
+  border: unset;
+  border-collapse: collapse;
+  width: 100%;
+}
+table.m-table tr{
+  height: 24px;
+  border-bottom: 1px solid #ddd;
+  cursor: default;
+}
+table.m-table tr > th {
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: lighter;
+  position: sticky;
+  top: 28px;
+  background-color: #ededed;
+  height: 55px !important;
+}
+table th .m-th-name{
+  height: 29px !important;
+  padding: 7px 10px;
+  vertical-align: center;
+}
+table .m-filter{
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+.m-cbb-filter span{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.m-filter .m-input{
+  width: 100%;
+}
+
+table.m-table tbody tr:hover {
+  background-color: #d7e9f4;
+}
+
+table.m-table td,th {
+  padding: 0 2px;
+  border: 1px solid #d9d9d9;
+  /* white-space: pre-wrap; */
+}
